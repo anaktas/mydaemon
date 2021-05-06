@@ -1,0 +1,13 @@
+[Unit]
+Description=My Service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=1
+User=zyxt
+ExecStart=/usr/bin/myservice
+
+[Install]
+WantedBy=multi-user.target
